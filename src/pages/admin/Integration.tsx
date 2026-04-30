@@ -8,7 +8,7 @@ import { toast } from "sonner";
 
 type Lang = "python" | "cpp";
 
-const BASE = apexApi.isMock ? "https://api.your-domain.com" : apexApi.baseUrl;
+const BASE = apexApi.isMock ? "https://apexcheats.vercel.app" : apexApi.baseUrl;
 
 const pythonSnippet = `"""
 Apex API client — Python 3.9+
