@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Check, Code2, Copy, FileCode2 } from "lucide-react";
+import { Check, Code as Code2, Copy, FileCode2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { apexApi } from "@/lib/api";
 import { SIGNING_SECRET } from "@/lib/crypto";
@@ -8,7 +8,7 @@ import { toast } from "sonner";
 
 type Lang = "python" | "cpp";
 
-const BASE = apexApi.isMock ? "https://apexcheats.vercel.app" : apexApi.baseUrl;
+const BASE = apexApi.baseUrl;
 
 const pythonSnippet = `"""
 Apex API client — Python 3.9+
