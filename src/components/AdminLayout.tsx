@@ -1,6 +1,6 @@
 import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { Activity, FileUp, KeyRound, LayoutDashboard, LogOut, Terminal } from "lucide-react";
+import { Activity, Code2, FileUp, KeyRound, LayoutDashboard, LogOut, Terminal } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { Button } from "@/components/ui/button";
 import { apexApi } from "@/lib/api";
@@ -10,6 +10,7 @@ const nav = [
   { to: "/admin/licenses", label: "Licenses", icon: KeyRound },
   { to: "/admin/files", label: "Files", icon: FileUp },
   { to: "/admin/api", label: "API Tester", icon: Terminal },
+  { to: "/admin/integration", label: "Integration", icon: Code2 },
 ];
 
 export default function AdminLayout() {

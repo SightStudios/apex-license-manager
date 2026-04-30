@@ -13,6 +13,7 @@ import Dashboard from "./pages/admin/Dashboard";
 import Licenses from "./pages/admin/Licenses";
 import Files from "./pages/admin/Files";
 import ApiTester from "./pages/admin/ApiTester";
+import Integration from "./pages/admin/Integration";
 
 const queryClient = new QueryClient();
 
@@ -39,6 +40,7 @@ const App = () => (
               <Route path="licenses" element={<Licenses />} />
               <Route path="files" element={<Files />} />
               <Route path="api" element={<ApiTester />} />
+              <Route path="integration" element={<Integration />} />
             </Route>
             <Route path="*" element={<NotFound />} />
           </Routes>
